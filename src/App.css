@@ -1,0 +1,45 @@
+.child-div {
+  text-align: center;
+}
+
+body {
+  background-color: #FAF3E0;
+}
+.header{
+  margin-top: 90px;
+}
+.my-button {
+  display: inline-block;
+  padding: 12px 15px;
+  margin-left: 10px;
+  background-color:#B8A57E;
+  /* Button background color */
+  color: #fff;
+  /* Text color */
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.my-button:hover {
+  background-color: #9E8D66;
+  /* Darker background on hover */
+  transform: translateX(3px);
+  /* Add a slight lift on hover */
+}
+
+input[type=text],
+select {
+  width: 30%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
