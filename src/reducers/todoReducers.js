@@ -16,6 +16,7 @@ const todoReducers = (state = intialState, action) => {
                         data: data // new data added 
                     }]
             }
+            default: return state;
     }
 }
 export default todoReducers

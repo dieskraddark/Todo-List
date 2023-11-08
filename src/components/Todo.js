@@ -19,7 +19,7 @@ export default function Todo() {
                     <div className="Additems">
                         <input type="text" placeholder="Enter Your Task Here"
                             value={inputData}
-                            onChange={changeEvent} />  <button class="my-button" onChange={() => dispatch(addTodo(inputData))} >Go</button>
+                            onChange={changeEvent} />  <button class="my-button" onClick={() => dispatch(addTodo(inputData))} >Go</button>
                     </div>
                 </div>
             </div>
