@@ -6,7 +6,7 @@ const todoReducers = (state = intialData, action) => {
         case "ADD_TODO":
 
             const { id, data } = action.payload;
-           
+
             return {
                 ...state,//get intial data 
                 list: [
@@ -16,8 +16,17 @@ const todoReducers = (state = intialData, action) => {
                         data: data // new data added 
                     }
                 ]
-            } 
-            default: return state;
+            }
+        case "DELETE_TODO":
+            
+            const  newList = state.list.filter((ele)=>ele.id !=action.id	)
+            return {
+                ...state,
+                list:newList
+            }
+
+
+        default: return state;
     }
 }
 export default todoReducers;

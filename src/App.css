@@ -71,6 +71,8 @@ select {
 }
 
 .dltb{
-  padding:5px;
-  border-radius: 10px;
+  padding:7px;
+  border-radius: 15px;
+  background-color: #B8A57E;
+  color:#fff;
 }

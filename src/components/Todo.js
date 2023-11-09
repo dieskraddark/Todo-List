@@ -29,7 +29,7 @@ export default function Todo() {
                     <div className="Additems">
                         <input type="text" placeholder="Enter Your Task Here"
                             value={inputData}
-                            onChange={changeEvent} /> <button class="my-button" onClick={handleAddTodo} >Go</button>
+                            onChange={changeEvent} /> <button className="my-button" onClick={handleAddTodo} >Go</button>
                     </div>
                 </div>
                 <div className="showitems">
@@ -38,7 +38,7 @@ export default function Todo() {
                             return (
                                 <div className="eachitem" key={ele.id}>
                                     <span><h3> &#9745;{ele.data}</h3></span>
-                                    <button className='dltb'>Delete</button>
+                                    <button className='dltb' onClick={()=>{dispatch(deleteTodo(ele.id))}}>Delete</button>
                             
                                 </div>
                             )
