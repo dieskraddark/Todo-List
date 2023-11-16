@@ -1,0 +1,12 @@
+git commands 
+git init
+git add . //(all folder )
+git commit -m "firt commit"
+git branch -M main 
+git remote add origin <link >
+git push -u origin main   
+
+//make changes to the file is //
+git add . 
+git commit -m "changes- info"
+git push -u origin main 
